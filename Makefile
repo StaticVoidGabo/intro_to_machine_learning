@@ -26,7 +26,6 @@ $(MD_FILES):
 	jupyter nbconvert --to markdown $(@:.md=.ipynb)
 
 delete_markdowns:
-	echo 0
 	rm -rf $(MD_FILES)
 
 delete_all_images:
