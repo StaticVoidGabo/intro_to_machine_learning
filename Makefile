@@ -1,11 +1,14 @@
-.PHONY: delete_markdowns delete_all_images move_images
+.PHONY: delete_markdowns delete_all_images move_images clean 
 
 images: markdowns_and_images delete_markdowns move_images
+
+clean: delete_markdowns delete_all_images
 
 markdowns_and_images: jupyter2markdown
 
 FILES = 2.1.regresion-lineal\
-	2.2.regresion_lineal_multiple
+	2.2.regresion_lineal_multiple\
+	2.3.efecto-underfitting-overfitting
 
 MD_FILES = $(addsuffix .md, $(FILES))
 MD_IMAGES_DIRS = $(addsuffix _files, $(FILES))
@@ -23,8 +26,10 @@ $(MD_FILES):
 	jupyter nbconvert --to markdown $(@:.md=.ipynb)
 
 delete_markdowns:
-	rm $(MD_FILES)
+	echo 0
+	rm -rf $(MD_FILES)
 
 delete_all_images:
+	echo 1
 	rm -rf $(MD_IMAGES_DIRS)
 	rm -rf $(BOOK_IMAGES_DIRS)
