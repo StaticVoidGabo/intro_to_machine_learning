@@ -8,7 +8,8 @@ markdowns_and_images: jupyter2markdown
 
 FILES = 2.1.regresion-lineal\
 	2.2.regresion_lineal_multiple\
-	2.3.efecto-underfitting-overfitting
+	2.3.efecto-underfitting-overfitting\
+	3.1-2-regresion-logistica
 
 MD_FILES = $(addsuffix .md, $(FILES))
 MD_IMAGES_DIRS = $(addsuffix _files, $(FILES))
