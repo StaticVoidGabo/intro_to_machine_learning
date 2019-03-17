@@ -11,7 +11,8 @@ FILES = 2.1.regresion-lineal\
 	2.3.efecto-underfitting-overfitting\
 	3.1-2-regresion-logistica\
 	4.1-4-optimizacion-de-modelos\
-	6.1-descomposicion-serie-tiempos
+	6.1-descomposicion-serie-tiempos\
+	6.2-diferentes-tecnicas-de-forecasting
 
 MD_FILES = $(addsuffix .md, $(FILES))
 MD_IMAGES_DIRS = $(addsuffix _files, $(FILES))
