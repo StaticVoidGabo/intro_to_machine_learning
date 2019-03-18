@@ -10,9 +10,10 @@ FILES = 2.1.regresion-lineal\
 	2.2.regresion_lineal_multiple\
 	2.3.efecto-underfitting-overfitting\
 	3.1-2-regresion-logistica\
-	4.1-4-optimizacion-de-modelos\
+	4.2-4-optimizacion-de-modelos\
 	6.1-descomposicion-serie-tiempos\
-	6.2.2-eligiendo-el-mejor-forecasting
+	6.2.2-eligiendo-el-mejor-forecasting\
+	7.1-2-aprendizaje-no-supervisado
 
 #6.2.1-diferentes-tecnicas-de-forecasting\
 
